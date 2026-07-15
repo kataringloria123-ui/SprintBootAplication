@@ -9,16 +9,16 @@ public class HelloController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return "This is the main page on Jetty";
+        return "This is the main page (using war deployment)";
     }
 
     @RequestMapping(value = "/welcome",method = RequestMethod.GET)
     public String welcome() {
-        return "Welcome to Spring Boot! (still on Jetty!)";
+        return "Welcome to Spring Boot! (using war deployment)";
     }
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String hello() {
-        return "Hello Sprint Boot! (still on Jetty!)";
+        return "Hello Sprint Boot! (using war deployment)";
     }
 }
